@@ -1,29 +1,15 @@
-/* 全体設定 */
 .reveal {
   font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
   color: #1a1a1a;
   background-color: #ffffff;
 }
 
-/* スライド */
-.reveal .slides {
-  padding: 2em;
-}
-
-/* タイトルや見出し */
 .reveal h1, .reveal h2 {
   color: #2A7AE2;
   border-bottom: 2px solid #e0e0e0;
   padding-bottom: 0.4em;
 }
 
-/* テキストとリスト */
-.reveal p, .reveal li {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-/* セクションの背景と影（軽く立体感） */
 .reveal section {
   background: #ffffff;
   padding: 1.5em;
@@ -31,38 +17,26 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* 表（テーブル） */
+.reveal p, .reveal li {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
 .reveal table {
   border-collapse: collapse;
   width: 100%;
   background: #f8f9fa;
   border-radius: 6px;
-  overflow: hidden;
 }
+
 .reveal th, .reveal td {
   border: 1px solid #ddd;
   padding: 0.6em 1em;
   text-align: center;
 }
+
 .reveal th {
   background-color: #e9f1fb;
   color: #2A7AE2;
   font-weight: 600;
-}
-
-/* リンク */
-.reveal a {
-  color: #2A7AE2;
-  text-decoration: underline;
-}
-.reveal a:hover {
-  opacity: 0.8;
-}
-
-/* スライド内のQRやコード枠など */
-.reveal pre, .reveal code {
-  background-color: #f4f6f8;
-  border-left: 3px solid #2A7AE2;
-  padding: 0.5em 1em;
-  font-family: monospace;
 }

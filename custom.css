@@ -1,42 +1,59 @@
+/* 背景・全体調整 */
 .reveal {
-  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-  color: #1a1a1a;
   background-color: #ffffff;
+  color: #1a1a1a;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.reveal h1, .reveal h2 {
-  color: #2A7AE2;
-  border-bottom: 2px solid #e0e0e0;
-  padding-bottom: 0.4em;
+/* スライド中央のテキスト */
+.reveal .slides section {
+  padding: 40px;
+  border-left: 8px solid #007acc;
+  background: #f8faff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 122, 204, 0.1);
 }
 
-.reveal section {
-  background: #ffffff;
-  padding: 1.5em;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+/* スライドタイトル */
+.reveal h2 {
+  color: #007acc;
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 0.6em;
 }
 
-.reveal p, .reveal li {
-  font-size: 1.1em;
-  line-height: 1.6;
+/* 箇条書きリスト */
+.reveal ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-.reveal table {
-  border-collapse: collapse;
-  width: 100%;
-  background: #f8f9fa;
-  border-radius: 6px;
+.reveal ul li {
+  font-size: 1.5em;
+  margin: 0.4em 0;
+  padding-left: 1em;
+  position: relative;
 }
 
-.reveal th, .reveal td {
-  border: 1px solid #ddd;
-  padding: 0.6em 1em;
-  text-align: center;
+.reveal ul li::before {
+  content: "🟦";
+  position: absolute;
+  left: 0;
+  color: #007acc;
+  font-size: 1em;
 }
 
-.reveal th {
-  background-color: #e9f1fb;
-  color: #2A7AE2;
-  font-weight: 600;
+/* 強調 */
+.reveal strong {
+  color: #005ea8;
+}
+
+/* ハイパーリンク */
+.reveal a {
+  color: #005ea8;
+  text-decoration: underline;
+}
+
+.reveal a:hover {
+  text-decoration: none;
 }
